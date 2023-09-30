@@ -1,4 +1,4 @@
-# homebrew-tap
+# gowebly homebrew-tap
 
 Homebrew formula for easily install [gowebly][gowebly_url] CLI on 
 GNU/Linux and Apple macOS.
