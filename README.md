@@ -24,7 +24,7 @@ brew upgrade gowebly/tap/gowebly
 
 ## ⚠️ License
 
-Homebrew tap for the [Gowebly CLI][gowebly_url] is a free and open-source software licensed under the [MIT][repo_license_url] license, created and supported by [Vic Shóstak][author_url] with 🩵 for people and robots.
+[`Homebrew tap for the Gowebly CLI`][gowebly_url] is a free and open-source software licensed under the [MIT][repo_license_url] license, created and supported by [Vic Shóstak][author_url] with 🩵 for people and robots.
 
 <!-- Project links -->
 
