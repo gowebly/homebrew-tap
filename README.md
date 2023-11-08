@@ -1,7 +1,6 @@
-# Homebrew tap for the `gowebly` CLI
+# Homebrew tap for the Gowebly CLI
 
-Homebrew formula for easily install [gowebly][gowebly_url] CLI on 
-GNU/Linux and Apple macOS.
+Homebrew formula for easily install [gowebly][gowebly_url] CLI on GNU/Linux and Apple macOS.
 
 ## ✨ Usage
 
@@ -25,9 +24,7 @@ brew upgrade gowebly/tap/gowebly
 
 ## ⚠️ License
 
-Homebrew tap for [`gowebly`][gowebly_url] CLI is a free and open-source 
-software licensed under the [MIT][repo_license_url] license, created and 
-supported by [Vic Shóstak][author_url] with 🩵 for people and robots.
+Homebrew tap for the [Gowebly CLI][gowebly_url] is a free and open-source software licensed under the [MIT][repo_license_url] license, created and supported by [Vic Shóstak][author_url] with 🩵 for people and robots.
 
 <!-- Project links -->
 
