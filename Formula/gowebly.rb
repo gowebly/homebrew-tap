@@ -10,17 +10,17 @@ class Gowebly < Formula
   license "Apache 2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_darwin_amd64.tar.gz"
-      sha256 "7ce3cee7725084db9dc9b9eeea10d8c9e1ad992c785e368db1ac113a54db713b"
+    if Hardware::CPU.arm?
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_darwin_arm64.tar.gz"
+      sha256 "54c49da4cbda5402c9398b437550aaa9aa85d3bfddca3e06a55201f2de2aa47f"
 
       def install
         bin.install "gowebly"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_darwin_arm64.tar.gz"
-      sha256 "2ee709d56c961e4b33e9f37620a1fc1cd049835d30ad683f96153fa59cd1bead"
+    if Hardware::CPU.intel?
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_darwin_amd64.tar.gz"
+      sha256 "f3cb6bf7579567ad419ae2135a242618a7476fb8bfdbaa329d093004a0c910fd"
 
       def install
         bin.install "gowebly"
@@ -29,17 +29,17 @@ class Gowebly < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_linux_arm64.tar.gz"
-      sha256 "558754cdc76ba482a33c03eb7744e69030ed3146f371b1a2c2a7fc5770afa23d"
+    if Hardware::CPU.intel?
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_linux_amd64.tar.gz"
+      sha256 "f8205c78a25d546ae1178280b8dd544cc151be045e8bb67424939d75b41949e8"
 
       def install
         bin.install "gowebly"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_linux_amd64.tar.gz"
-      sha256 "cbaadcf010783aabe4c5499b30ff769fbac72b166e30a0c373d88c646b51f33f"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_linux_arm64.tar.gz"
+      sha256 "04c6500e3f688eab6d921e0c18a67316da131399b6a34a79bb5b1065e88c31fb"
 
       def install
         bin.install "gowebly"
