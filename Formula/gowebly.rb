@@ -6,21 +6,21 @@ class Gowebly < Formula
   desc "A next-generation CLI tool for building amazing web applications in Go using htmx & hyperscript and the most popular atomic/utility-first CSS frameworks.
 "
   homepage "https://github.com/gowebly/gowebly"
-  version "1.7.0"
+  version "1.8.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.7.0/gowebly_1.7.0_darwin_arm64.tar.gz"
-      sha256 "e5960609179b2cc1476304cc795227153cd3b0d3b9213f50077544582d33bcea"
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_darwin_arm64.tar.gz"
+      sha256 "e619505c0828ca31d8706cd2a0c7511261f44e17b2e1f2f302be48c089ca3494"
 
       def install
         bin.install "gowebly"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.7.0/gowebly_1.7.0_darwin_amd64.tar.gz"
-      sha256 "7d18a5ccd6a05adc9be420e4a2f753777ef17fcc93cf0a15b5b1097adf7b36dc"
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_darwin_amd64.tar.gz"
+      sha256 "5aa4d96fcc6c52ba4119b8a9bae817d28d588ed6e29ece11e5d6753ef2cb86b3"
 
       def install
         bin.install "gowebly"
@@ -29,17 +29,17 @@ class Gowebly < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.7.0/gowebly_1.7.0_linux_amd64.tar.gz"
-      sha256 "781760a36d2a2cd645513ff535002e69d4e4512350693c9da8e2f67ae8c3e6cb"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_linux_arm64.tar.gz"
+      sha256 "2b1e7c6a7db6e3fff446b5cbe58560e8d17b9b077f19426fe1d3f5a7362cfaef"
 
       def install
         bin.install "gowebly"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gowebly/gowebly/releases/download/v1.7.0/gowebly_1.7.0_linux_arm64.tar.gz"
-      sha256 "e3dc0c9f043797f2aff0fa9bf2566cd3ff4804d44794df22aa8b16cb145ecab1"
+    if Hardware::CPU.intel?
+      url "https://github.com/gowebly/gowebly/releases/download/v1.8.0/gowebly_1.8.0_linux_amd64.tar.gz"
+      sha256 "704d059d4210e49778d8564146e59c9e39779517f4f986a4be36b637c14901d8"
 
       def install
         bin.install "gowebly"
