@@ -6,21 +6,21 @@ class Gowebly < Formula
   desc "A next-generation CLI tool that makes it easy to create amazing web applications with Go on the backend, using htmx, hyperscript or Alpine.js and the most popular CSS frameworks on the frontend.
 "
   homepage "https://github.com/gowebly/gowebly"
-  version "2.6.10"
+  version "2.7.0"
   license "Apache 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/gowebly/gowebly/releases/download/v2.6.10/gowebly_2.6.10_darwin_amd64.tar.gz"
-      sha256 "cbe7240f18103de06672e2642a318fae31a1f37ff11713fa3dc55cfbdfdcd7f6"
+      url "https://github.com/gowebly/gowebly/releases/download/v2.7.0/gowebly_2.7.0_darwin_amd64.tar.gz"
+      sha256 "2e00f2d348118c2843c5c3d569da42f9048d0fab248fc791541e41a041cd03eb"
 
       def install
         bin.install "gowebly"
       end
     end
     on_arm do
-      url "https://github.com/gowebly/gowebly/releases/download/v2.6.10/gowebly_2.6.10_darwin_arm64.tar.gz"
-      sha256 "e231d650b5af1bfaaff0a33ca053c55c32395ae4ae92ada9d9e757a75befa8d3"
+      url "https://github.com/gowebly/gowebly/releases/download/v2.7.0/gowebly_2.7.0_darwin_arm64.tar.gz"
+      sha256 "c6bd2615dacae7f012f8b7cafda44968e6fac300517a2be643e60f0eebdb6baa"
 
       def install
         bin.install "gowebly"
@@ -31,8 +31,8 @@ class Gowebly < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gowebly/gowebly/releases/download/v2.6.10/gowebly_2.6.10_linux_amd64.tar.gz"
-        sha256 "73a64c0af63b455b88c2a3a27c6a64e76d4311e169bd8e430655df61582a6279"
+        url "https://github.com/gowebly/gowebly/releases/download/v2.7.0/gowebly_2.7.0_linux_amd64.tar.gz"
+        sha256 "f370c00f3a1ac918a424956f47475cccf10a3c60355824fb928c6466904dbbbc"
 
         def install
           bin.install "gowebly"
@@ -41,8 +41,8 @@ class Gowebly < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gowebly/gowebly/releases/download/v2.6.10/gowebly_2.6.10_linux_arm64.tar.gz"
-        sha256 "9f576ad61bb23c4026d48984d3588ee38e7078bebbd5ba0b9ca14ee56193c6a4"
+        url "https://github.com/gowebly/gowebly/releases/download/v2.7.0/gowebly_2.7.0_linux_arm64.tar.gz"
+        sha256 "c53fd9d0c2664dd762008ab9bdefc3c98b1cef19b7ac84a4b43936c92347522e"
 
         def install
           bin.install "gowebly"
